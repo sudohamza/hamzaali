@@ -1,8 +1,18 @@
-import { FaFolderOpen } from "react-icons/fa";
+import {
+  FaCss3Alt,
+  FaFolderOpen,
+  FaHtml5,
+  FaNodeJs,
+  FaReact,
+} from "react-icons/fa";
 import { personalInfo } from "../data/info";
 import { MdOutlineSchool } from "react-icons/md";
 import { LiaSchoolSolid } from "react-icons/lia";
-import { IoCodeSlash } from "react-icons/io5";
+import { IoCodeSlash, IoLogoJavascript } from "react-icons/io5";
+import { ImHtmlFive2 } from "react-icons/im";
+import { AiOutlineJavaScript } from "react-icons/ai";
+import { SiNestjs, SiRedux, SiTypescript } from "react-icons/si";
+import { BiLogoRedux } from "react-icons/bi";
 
 const About = () => {
   return (
@@ -62,7 +72,7 @@ const About = () => {
       </div>
       <div className="flex-1 border-t mt-36 border-black"></div>
       {/* Second Section */}
-      <div>
+      <div className="">
         <div className="container md:mx-auto py-20 ">
           <div className="block  lg:flex items-center px- ">
             <div className=" text-center lg:text-left">
@@ -82,7 +92,7 @@ const About = () => {
             </div>
           </div>
           {/* Resume Steps */}
-          <div className="mt-16 block lg:flex">
+          <div className="pl-2 mt-16 block lg:flex">
             {/* Col One */}
             <div className="w-full lg:w-1/2">
               {/* 1 */}
@@ -309,15 +319,73 @@ const About = () => {
       <div className="flex-1 border-t mt-36 border-black"></div>
 
       {/* Third Section */}
-      <div className="mt-16">
+      <div className="mt-16 pb-32">
         <div className="container mx-auto">
           {/* Heading */}
-          <div className=" text-center flex items-center px-5 ">
+          <div className=" text-center flex items-center px-5 mb-10">
             <div className=" mx-auto text-center ">
               <h1 className="text-3xl text-orange-500 font-bold">SKILLs</h1>
               <h1 className="text-4xl md:text-4xl lg:text-5xl text-white font-bold my-5">
                 My Web Skills
               </h1>
+            </div>
+          </div>
+          {/* Logos */}
+          <div className="mx-4 flex flex-wrap gap-5 justify-center">
+            <div className=" flex-col align-middle text-center">
+              <FaHtml5 className="text-9xl text-orange-500  bg-slate-800  shadow-md  rounded-full p-4" />
+              <h3 className="text-white mt-2 bg-slate-800 shadow-md rounded-full text-xl">
+                HTML
+              </h3>
+            </div>
+            <div className="mx-4  flex-col align-middle text-center">
+              <FaCss3Alt className="text-9xl text-blue-700  bg-slate-800  shadow-md  rounded-full p-4" />
+              <h3 className="text-white mt-2 bg-slate-800 shadow-md rounded-full text-xl">
+                CSS
+              </h3>
+            </div>
+            <div className="mx-4  flex-col align-middle text-center">
+              <AiOutlineJavaScript className="text-9xl text-yellow-500  bg-slate-800  shadow-md  rounded-full p-4" />
+              <h3 className="text-white mt-2 bg-slate-800 shadow-md rounded-full text-xl">
+                JavaScript
+              </h3>
+            </div>
+            <div className="mx-4  flex-col align-middle text-center">
+              <div className="w-32 h-32 flex justify-center items-center bg-slate-800 shadow-md rounded-full">
+                <div className=" bg-blue-500 relative w-16 h-16 rounded">
+                  <div className="text-white absolute bottom-0 right-0 font-bold text-3xl p-1">
+                    TS
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-white mt-2 bg-slate-800 shadow-md rounded-full text-xl">
+                TypeScript
+              </h3>
+            </div>
+            <div className=" mx-4 flex-col align-middle text-center">
+              <FaReact className=" text-9xl text-blue-300  bg-slate-800  shadow-md  rounded-full p-4" />
+              <h3 className="text-white mt-2 bg-slate-800 shadow-md rounded-full text-xl">
+                React JS
+              </h3>
+            </div>
+            <div className=" mx-4 flex-col align-middle text-center">
+              <BiLogoRedux className="text-9xl text-purple-500  bg-slate-800  shadow-md  rounded-full p-4" />
+              <h3 className="text-white mt-2 bg-slate-800 shadow-md rounded-full text-xl">
+                Redux
+              </h3>
+            </div>
+
+            <div className=" mx-4 flex-col align-middle text-center">
+              <FaNodeJs className="text-9xl text-green-700  bg-slate-800  shadow-md  rounded-full p-4" />
+              <h3 className="text-white mt-2 bg-slate-800 shadow-md rounded-full text-xl">
+                Node JS
+              </h3>
+            </div>
+            <div className=" mx-4 flex-col align-middle text-center">
+              <SiNestjs className="text-9xl text-pink-700  bg-slate-800  shadow-md  rounded-full p-4" />
+              <h3 className="text-white mt-2 bg-slate-800 shadow-md rounded-full text-xl">
+                Nest JS
+              </h3>
             </div>
           </div>
         </div>
