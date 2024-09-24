@@ -63,8 +63,8 @@ const About = () => {
       <div className="flex-1 border-t mt-36 border-black"></div>
       {/* Second Section */}
       <div>
-        <div className="container mx-auto py-20 ">
-          <div className="block  lg:flex items-center px-5 ">
+        <div className="container md:mx-auto py-20 ">
+          <div className="block  lg:flex items-center px- ">
             <div className=" text-center lg:text-left">
               <h1 className="text-3xl text-orange-500 font-bold">
                 EXPERIENCE AND EDUCATION
@@ -82,7 +82,7 @@ const About = () => {
             </div>
           </div>
           {/* Resume Steps */}
-          <div className="mt-16 block lg:flex px-10 ">
+          <div className="mt-16 block lg:flex">
             {/* Col One */}
             <div className="w-full lg:w-1/2">
               {/* 1 */}
@@ -97,15 +97,15 @@ const About = () => {
                       <LiaSchoolSolid className="bg-orange-500 text-white p-2 text-6xl rounded-full" />
                     </div>
                     <div>
-                      <div className="sm:block 2xl:flex  items-center  text-white font-bold text-3xl">
+                      <div className="sm:block 2xl:flex  items-center  text-white font-bold text-2xl  md:text-3xl">
                         <div>MATRICULATION</div>
                         <div>
-                          <span className="bg-orange-500 text-white px-4 rounded-full 2xl:ml-3 text-lg py-1.5">
-                            Farabi Govt Secondary School.
+                          <span className="bg-orange-500 text-white px-4 rounded-full 2xl:ml-3 text-sm md:text-lg py-1.5">
+                            Farabi Govt Sec School.
                           </span>
                         </div>
                       </div>
-                      <p className="text-white text-lg max-w-80 my-5">
+                      <p className="text-white text-lg max-w-80 my-5 mr-2">
                         I completed my matriculation in 2018, (Science group),
                         where I focused on subjects such as Biology, Chemistry,
                         Physics and Mathematics.
@@ -130,15 +130,15 @@ const About = () => {
                       <MdOutlineSchool className="bg-orange-500 text-white p-2 text-6xl rounded-full" />
                     </div>
                     <div>
-                      <div className="sm:block 2xl:flex  items-center  text-white font-bold text-3xl">
+                      <div className="sm:block 2xl:flex  items-center  text-white font-bold text-2xl  md:text-3xl">
                         <div>DAE ( ELECTRONICS )</div>
                         <div>
-                          <span className="bg-orange-500 text-white px-4 rounded-full 2xl:ml-3 text-lg py-1.5">
+                          <span className="bg-orange-500 text-white px-4 rounded-full 2xl:ml-3 text-sm md:text-lg py-1.5">
                             St. Patrick’s Inst. of Sci. & Tech.
                           </span>
                         </div>
                       </div>
-                      <p className="text-white text-lg max-w-80 my-5">
+                      <p className="text-white text-lg max-w-80 my-5 mr-2">
                         In 2020, I earned my Diploma in Electronics, focusing on
                         modern electronics and computation, equipping me to
                         tackle real-world challenges.
@@ -163,15 +163,15 @@ const About = () => {
                       <IoCodeSlash className="bg-orange-500 text-white p-2 text-6xl rounded-full" />
                     </div>
                     <div>
-                      <div className="sm:block 2xl:flex  items-center  text-white font-bold text-3xl">
+                      <div className="sm:block 2xl:flex  items-center  text-white font-bold text-2xl  md:text-3xl">
                         <div>WEB DEVELOPER</div>
                         <div>
-                          <span className="bg-orange-500 text-white px-4 rounded-full 2xl:ml-3 text-lg py-1.5">
+                          <span className="bg-orange-500 text-white px-4 rounded-full 2xl:ml-3 text-sm md:text-lg py-1.5">
                             Freelance
                           </span>
                         </div>
                       </div>
-                      <p className="text-white text-lg max-w-80 my-5">
+                      <p className="text-white text-lg max-w-80 my-5 mr-2">
                         I have been working as a freelance web developer for
                         more than two years.
                       </p>
@@ -198,15 +198,15 @@ const About = () => {
                       <FaFolderOpen className="bg-orange-500 text-white p-2 text-6xl rounded-full" />
                     </div>
                     <div>
-                      <div className="sm:block 2xl:flex  items-center  text-white font-bold text-3xl">
+                      <div className="sm:block 2xl:flex  items-center  text-white font-bold text-2xl  md:text-3xl">
                         <div>COMPUTER SCIENCE</div>
                         <div>
-                          <span className="bg-orange-500 text-white px-4 rounded-full 2xl:ml-3 text-lg py-1.5">
+                          <span className="bg-orange-500 text-white px-4 rounded-full 2xl:ml-3 text-sm md:text-lg py-1.5">
                             Self-taught
                           </span>
                         </div>
                       </div>
-                      <p className="text-white text-lg max-w-96 my-5">
+                      <p className="text-white text-lg max-w-96 my-5 mr-2">
                         Self-taught in Computer Science,focusing on:
                         <br />
                         <span className="flex items-center  text-4xl">
@@ -279,15 +279,15 @@ const About = () => {
                       </div>
                     </div>
                     <div>
-                      <div className="sm:block 2xl:flex  items-center  text-white font-bold text-3xl">
+                      <div className="sm:block 2xl:flex  items-center  text-white font-bold text-2xl  md:text-3xl">
                         <div>WEB DEVELOPER</div>
                         <div>
-                          <span className="bg-orange-500 text-white px-4 rounded-full 2xl:ml-3 text-lg py-1.5">
+                          <span className="bg-orange-500 text-white px-4 rounded-full 2xl:ml-3 text-sm md:text-lg py-1.5">
                             VentureDive
                           </span>
                         </div>
                       </div>
-                      <p className="text-white text-lg max-w-80 my-5">
+                      <p className="text-white text-lg max-w-80 my-5 mr-2">
                         I completed a four-month internship as a web developer
                         at VentureDive from February 28 to June 28, 2024. During
                         this time, I collaborated with a talented team to design
