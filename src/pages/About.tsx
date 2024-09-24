@@ -8,10 +8,9 @@ import {
 import { personalInfo } from "../data/info";
 import { MdOutlineSchool } from "react-icons/md";
 import { LiaSchoolSolid } from "react-icons/lia";
-import { IoCodeSlash, IoLogoJavascript } from "react-icons/io5";
-import { ImHtmlFive2 } from "react-icons/im";
+import { IoCodeSlash } from "react-icons/io5";
 import { AiOutlineJavaScript } from "react-icons/ai";
-import { SiNestjs, SiRedux, SiTypescript } from "react-icons/si";
+import { SiNestjs } from "react-icons/si";
 import { BiLogoRedux } from "react-icons/bi";
 
 const About = () => {
