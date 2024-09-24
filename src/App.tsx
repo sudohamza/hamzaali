@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route
           path="/"
