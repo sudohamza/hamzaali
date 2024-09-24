@@ -1,0 +1,73 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+body {
+  background-color: #212428;
+}
+
+.bgOne {
+  width: 100%;
+  background-image: url("./assets/bgone.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.page__heading {
+  position: relative;
+  text-align: center;
+}
+
+.page__heading--title {
+  font-size: 3.8rem;
+  line-height: 4rem;
+  color: white;
+  font-weight: 600;
+  text-shadow: 3px 3px 0 #ee5f38, -1px -1px 0 #ee5f38, 1px -1px 0 #ee5f38,
+    -1px 1px 0 #ee5f38, 1px 1px 0 #ee5f38;
+  opacity: 0.2;
+}
+.page__heading--subtitle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: 600;
+}
+
+@keyframes move-up-down {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.animate-up-down {
+  animation: move-up-down 3s ease-in-out infinite;
+}
