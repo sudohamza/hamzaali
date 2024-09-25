@@ -8,11 +8,11 @@ import ScrollToTop from "./components/ScroolToTop";
 
 const App = () => {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter basename="/">
       <ScrollToTop />
       <Routes>
         <Route
-          path="/"
+          path="/home"
           element={<MainAnimation menu={false} children={<Home />} />}
         />
         <Route path="/about" element={<MainAnimation children={<About />} />} />
