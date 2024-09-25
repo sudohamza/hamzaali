@@ -3,12 +3,12 @@ import MainAnimation from "./components/MainAnimation";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import PortFolio from "./pages/PortFolio";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import ScrollToTop from "./components/ScroolToTop";
 
 const App = () => {
   return (
-    <HashRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
       <Routes>
         <Route
@@ -21,7 +21,7 @@ const App = () => {
           element={<MainAnimation children={<PortFolio />} />}
         />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
