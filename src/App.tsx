@@ -8,7 +8,7 @@ import ScrollToTop from "./components/ScroolToTop";
 
 const App = () => {
   return (
-    <HashRouter basename="/">
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route
