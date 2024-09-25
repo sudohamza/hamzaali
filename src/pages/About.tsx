@@ -10,7 +10,7 @@ import { MdOutlineSchool } from "react-icons/md";
 import { LiaSchoolSolid } from "react-icons/lia";
 import { IoCodeSlash } from "react-icons/io5";
 import { AiOutlineJavaScript } from "react-icons/ai";
-import { SiLeetcode, SiNestjs } from "react-icons/si";
+import { SiNestjs } from "react-icons/si";
 import { BiLogoPostgresql, BiLogoRedux } from "react-icons/bi";
 import { DiMysql } from "react-icons/di";
 import { TbBrandMongodb } from "react-icons/tb";
