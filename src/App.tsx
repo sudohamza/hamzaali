@@ -15,9 +15,12 @@ const App = () => {
           path="/"
           element={<MainAnimation menu={false} children={<Home />} />}
         />
-        <Route path="/about" element={<MainAnimation children={<About />} />} />
         <Route
-          path="/portfolio"
+          path="/hamzaali/about"
+          element={<MainAnimation children={<About />} />}
+        />
+        <Route
+          path="/hamzaali/portfolio"
           element={<MainAnimation children={<PortFolio />} />}
         />
       </Routes>
