@@ -10,8 +10,11 @@ import { MdOutlineSchool } from "react-icons/md";
 import { LiaSchoolSolid } from "react-icons/lia";
 import { IoCodeSlash } from "react-icons/io5";
 import { AiOutlineJavaScript } from "react-icons/ai";
-import { SiNestjs } from "react-icons/si";
-import { BiLogoRedux } from "react-icons/bi";
+import { SiLeetcode, SiNestjs } from "react-icons/si";
+import { BiLogoPostgresql, BiLogoRedux } from "react-icons/bi";
+import { DiMysql } from "react-icons/di";
+import { TbBrandMongodb } from "react-icons/tb";
+import leetCode from "../assets/leetcode.png";
 
 const About = () => {
   return (
@@ -386,6 +389,78 @@ const About = () => {
                 Nest JS
               </h3>
             </div>
+            <div className=" mx-4 flex-col align-middle text-center">
+              <DiMysql className="text-9xl text-blue-800  bg-slate-800  shadow-md  rounded-full p-4" />
+              <h3 className="text-white mt-2 bg-slate-800 shadow-md rounded-full text-xl">
+                My SQL
+              </h3>
+            </div>
+            <div className=" mx-4 flex-col align-middle text-center">
+              <TbBrandMongodb className="text-9xl text-green-800  bg-slate-800  shadow-md  rounded-full p-4" />
+              <h3 className="text-white mt-2 bg-slate-800 shadow-md rounded-full text-xl">
+                Mongo DB
+              </h3>
+            </div>
+            <div className=" mx-4 flex-col align-middle text-center">
+              <BiLogoPostgresql className="text-9xl text-blue-500  bg-slate-800  shadow-md  rounded-full p-4" />
+              <h3 className="text-white mt-2 bg-slate-800 shadow-md rounded-full text-xl">
+                Postgres
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Fourth Section */}
+      <div className="my-20">
+        <div className="container mx-auto">
+          {/* Heading */}
+          <div className=" text-center flex items-center px-5 mb-10">
+            <div className=" mx-auto text-center ">
+              <h1 className="text-3xl text-orange-500 font-bold">
+                PROBLEM SOLVING
+              </h1>
+              <h1 className="text-4xl md:text-4xl lg:text-5xl text-white font-bold my-5">
+                Explore My Problem-Solving Journey
+              </h1>
+            </div>
+          </div>
+          {/* Profiles */}
+          <div className="md:block mx-5 lg:flex justify-center gap-10">
+            {/* Project Euler */}
+            <div className="flex-col gap-5 my-5 justify-around items-center bg-slate-800  px-7 py-5 shadow-md rounded-xl">
+              <div>
+                <div className="rounded-xl mx-auto overflow-hidden w-36">
+                  <div className="bg-orange-500 py-2"></div>
+                  <div className="text-black text-center sm:px-5  md:px-6 bg-white text-6xl font-bold p-4 ">
+                    PE
+                  </div>
+                  <div className="bg-orange-500 py-2"></div>
+                </div>
+              </div>
+              <div className="flex-col">
+                <h1 className="text-center my-4 text-2xl md:text-3xl font-extrabold text-orange-500">
+                  See My Project Euler Profile
+                </h1>
+                <button className="my-4 mx-auto text-md md:text-xl hover:text-orange-500 hover:bg-white transition-colors duration-500 flex align-middle px-3 py-1 md:px-6 md:py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
+                  <p>Goto Profile</p>
+                </button>
+              </div>
+            </div>
+            {/* Leet Code */}
+            <div className="flex-col gap-5 my-5 justify-around items-center bg-slate-800  px-7 py-5 shadow-md rounded-xl">
+              <div className="">
+                <img className="mx-auto" src={leetCode} width={140} />
+              </div>
+              <div className="flex-col">
+                <h1 className="text-center text-2xl md:text-3xl font-extrabold text-orange-500">
+                  See My Project Euler Profile
+                </h1>
+                <button className="my-4 mx-auto text-md md:text-xl hover:text-orange-500 hover:bg-white transition-colors duration-500 flex align-middle px-4 py-1.5 md:px-6 md:py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
+                  <p>Goto Profile</p>
+                </button>
+              </div>
+            </div>
+            {/* */}
           </div>
         </div>
       </div>

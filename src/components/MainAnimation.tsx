@@ -53,10 +53,10 @@ const SideMenu = () => {
         <div
           className={`${
             open ? "w-auto" : "w-0"
-          } transition-colors duration-1000`}
+          } transition-colors duration-1000 `}
         >
           {/* Home */}
-          <div className="flex gap-5 py-1 mb-1.5 hover:text-orange-600 cursor-pointer">
+          <div className="flex backdrop-blur-lg  gap-5 py-1 mb-1.5 hover:text-orange-600 cursor-pointer">
             <NavLink
               onClick={() => setOpen((prev) => !prev)}
               style={{
@@ -80,7 +80,7 @@ const SideMenu = () => {
               }
               to="/"
             >
-              <h2 className="transition-colors hover:text-orange-500 font-extrabold text-1xl duration-1000 ease-in-out">
+              <h2 className=" transition-colors hover:text-orange-500 font-extrabold text-1xl duration-1000 ease-in-out">
                 HOME
               </h2>
             </NavLink>
