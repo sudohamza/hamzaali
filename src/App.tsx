@@ -3,16 +3,16 @@ import MainAnimation from "./components/MainAnimation";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import PortFolio from "./pages/PortFolio";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import ScrollToTop from "./components/ScroolToTop";
 
 const App = () => {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route
-          path="/home"
+          path="/"
           element={<MainAnimation menu={false} children={<Home />} />}
         />
         <Route path="/about" element={<MainAnimation children={<About />} />} />
@@ -21,7 +21,7 @@ const App = () => {
           element={<MainAnimation children={<PortFolio />} />}
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
