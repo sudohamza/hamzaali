@@ -75,9 +75,21 @@ const Home = () => {
                 <div className="flex items-center gap-3 my-10">
                   <div className="mx-auto lg:mx-0 flex items-center gap-3">
                     <h1 className="text-white font-bold text-xl">Follow Me:</h1>
-                    <BiLogoLinkedin className="border hover:bg-orange-500 hover:text-white transition-colors duration-300 border-orange-500 text-4xl cursor-pointer text-orange-500 rounded-full p-1.5" />
-                    <FaGithub className="border hover:bg-orange-500 hover:text-white transition-colors duration-300 border-orange-500 text-4xl cursor-pointer text-orange-500 rounded-full p-1.5" />
-                    <BiLogoGoogle className="border hover:bg-orange-500 hover:text-white transition-colors duration-300 border-orange-500 text-4xl cursor-pointer text-orange-500 rounded-full p-1.5" />
+                    <a
+                      href="https://www.linkedin.com/in/hamza-ali-35bb76309/"
+                      target="_blank"
+                    >
+                      <BiLogoLinkedin className="border hover:bg-orange-500 hover:text-white transition-colors duration-300 border-orange-500 text-4xl cursor-pointer text-orange-500 rounded-full p-1.5" />
+                    </a>
+                    <a href="https://github.com/sudohamza" target="_blank">
+                      <FaGithub className="border hover:bg-orange-500 hover:text-white transition-colors duration-300 border-orange-500 text-4xl cursor-pointer text-orange-500 rounded-full p-1.5" />
+                    </a>
+                    <a
+                      href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=askhamzaali@gmail.com&su=Your%20Subject&body=Your%20message%20here."
+                      target="_blank"
+                    >
+                      <BiLogoGoogle className="border hover:bg-orange-500 hover:text-white transition-colors duration-300 border-orange-500 text-4xl cursor-pointer text-orange-500 rounded-full p-1.5" />
+                    </a>
                   </div>
                 </div>
               </div>

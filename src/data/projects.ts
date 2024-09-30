@@ -1,5 +1,6 @@
 import towerImage from "../assets/tower.png"
 import dbImage from "../assets/muidashboard.png"
+import bTracker from "../assets/btracker.png";
 export const  myProjects = [
     {
         title:"Tower of Hanoi",
@@ -16,5 +17,13 @@ export const  myProjects = [
         liveLink:"https://sudohamza.github.io/admin-dashboard-mui/",
         img:dbImage,
         preview:false,
+    },
+          {
+        title:"Budget-Tracker",
+        des:"The Budget Tracker is a web app for managing finances, featuring user authentication, a transaction dashboard, and data visualization, powered by a Node.js backend.",
+        sourceLink:"https://github.com/sudohamza/Budget-Tracker-App",
+        liveLink:"",
+        img:bTracker,
+        preview:true,
     },
 ]

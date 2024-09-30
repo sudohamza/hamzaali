@@ -14,7 +14,7 @@ const PortFolio = () => {
         </div>
       </div>
       {/* Cards */}
-      <div className="container mx-auto">
+      <div className="container mx-auto px-3 my-10 mb-20">
         <div className="flex-wrap flex justify-center gap-10">
           {myProjects.map((item, index) => {
             return (

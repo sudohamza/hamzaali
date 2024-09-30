@@ -57,9 +57,14 @@ const About = () => {
                   );
                 })}
               </div>
-              <button className="text-xl   hover:text-orange-500 hover:bg-white transition-colors duration-500 flex my-8 align-middle px-6 py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
-                <p>Hire Me</p>
-              </button>
+              <a
+                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=askhamzaali@gmail.com&su=Your%20Subject&body=Your%20message%20here."
+                target="_blank"
+              >
+                <button className="text-xl   hover:text-orange-500 hover:bg-white transition-colors duration-500 flex my-8 align-middle px-6 py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
+                  <p>Hire Me</p>
+                </button>
+              </a>
             </div>
             {/* Image */}
             <div className="relative">
@@ -441,9 +446,14 @@ const About = () => {
                 <h1 className="text-center my-4 text-2xl md:text-3xl font-extrabold text-orange-500">
                   See My Project Euler Profile
                 </h1>
-                <button className="my-4 mx-auto text-md md:text-xl hover:text-orange-500 hover:bg-white transition-colors duration-500 flex align-middle px-3 py-1 md:px-6 md:py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
-                  <p>Goto Profile</p>
-                </button>
+                <a
+                  href="https://projecteuler.net/profile/hamza-ali-khan.png"
+                  target="_blank"
+                >
+                  <button className="my-4 mx-auto text-md md:text-xl hover:text-orange-500 hover:bg-white transition-colors duration-500 flex align-middle px-3 py-1 md:px-6 md:py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
+                    <p>Goto Profile</p>
+                  </button>
+                </a>
               </div>
             </div>
             {/* Leet Code */}
@@ -453,7 +463,7 @@ const About = () => {
               </div>
               <div className="flex-col">
                 <h1 className="text-center text-2xl md:text-3xl font-extrabold text-orange-500">
-                  See My Project Euler Profile
+                  See My Leet Code Profile
                 </h1>
                 <button className="my-4 mx-auto text-md md:text-xl hover:text-orange-500 hover:bg-white transition-colors duration-500 flex align-middle px-4 py-1.5 md:px-6 md:py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
                   <p>Goto Profile</p>
