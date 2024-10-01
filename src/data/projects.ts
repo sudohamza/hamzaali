@@ -1,6 +1,7 @@
 import towerImage from "../assets/tower.png"
 import dbImage from "../assets/muidashboard.png"
 import bTracker from "../assets/btracker.png";
+import snakeImg from "../assets/snake.png";
 export const  myProjects = [
     {
         title:"Tower of Hanoi",
@@ -25,5 +26,13 @@ export const  myProjects = [
         liveLink:"",
         img:bTracker,
         preview:true,
+    },
+        {
+        title:"Snake",
+        des:"The Budget Tracker is a web app for managing finances, featuring user authentication, a transaction dashboard, and data visualization, powered by a Node.js backend.",
+        sourceLink:"https://github.com/sudohamza/snake",
+        liveLink:"https://sudohamza.github.io/snake/",
+        img:snakeImg,
+        preview:false,
     },
 ]
