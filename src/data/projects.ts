@@ -29,7 +29,7 @@ export const  myProjects = [
     },
         {
         title:"Snake",
-        des:"The Budget Tracker is a web app for managing finances, featuring user authentication, a transaction dashboard, and data visualization, powered by a Node.js backend.",
+        des:"This is a classic Snake game built using React, HTML, CSS, and JavaScript. Players control a snake that moves around the grid, eating food to grow longer while avoiding collisions with the walls. The game features smooth controls, real-time scoring,",
         sourceLink:"https://github.com/sudohamza/snake",
         liveLink:"https://sudohamza.github.io/snake/",
         img:snakeImg,

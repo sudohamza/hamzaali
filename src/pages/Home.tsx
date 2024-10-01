@@ -36,7 +36,7 @@ const Home = () => {
                 <div className="text-xl font-medium bg-white mt-0.5 rounded-b-xl p-3">
                   <div className="mb-5 flex px-5 items-center gap-4 text-orange-500">
                     <FaPhoneAlt className="border text-5xl rounded-full p-2 border-orange-500" />
-                    <h1 className="text-gray-500">+923354295878</h1>
+                    <h1 className="text-gray-500">+923283380239</h1>
                   </div>
                   <div className="mb-5 flex font-medium px-5 items-center gap-4 text-orange-500">
                     <CiMail className="border text-5xl rounded-full p-2 border-orange-500" />

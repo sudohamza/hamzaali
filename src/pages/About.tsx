@@ -1,6 +1,8 @@
 import {
   FaCss3Alt,
+  FaDocker,
   FaFolderOpen,
+  FaGitAlt,
   FaHtml5,
   FaNodeJs,
   FaReact,
@@ -412,6 +414,18 @@ const About = () => {
                 Postgres
               </h3>
             </div>
+            <div className=" mx-4 flex-col align-middle text-center">
+              <FaGitAlt className="text-9xl text-orange-600  bg-slate-800  shadow-md  rounded-full p-4" />
+              <h3 className="text-white mt-2  bg-slate-800 shadow-md rounded-full text-xl">
+                Git
+              </h3>
+            </div>
+            <div className=" mx-4 flex-col align-middle justify-center text-center">
+              <FaDocker className="text-9xl  text-blue-500  bg-slate-800  shadow-md  rounded-full p-4" />
+              <h3 className="text-white mt-2 bg-slate-800 shadow-md rounded-full text-xl">
+                Docker
+              </h3>
+            </div>
           </div>
         </div>
       </div>
@@ -465,9 +479,11 @@ const About = () => {
                 <h1 className="text-center text-2xl md:text-3xl font-extrabold text-orange-500">
                   See My Leet Code Profile
                 </h1>
-                <button className="my-4 mx-auto text-md md:text-xl hover:text-orange-500 hover:bg-white transition-colors duration-500 flex align-middle px-4 py-1.5 md:px-6 md:py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
-                  <p>Goto Profile</p>
-                </button>
+                <a href="https://leetcode.com/u/askhamzaali/" target="__blank">
+                  <button className="my-4 mx-auto text-md md:text-xl hover:text-orange-500 hover:bg-white transition-colors duration-500 flex align-middle px-4 py-1.5 md:px-6 md:py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
+                    <p>Goto Profile</p>
+                  </button>
+                </a>
               </div>
             </div>
             {/* */}
