@@ -71,3 +71,7 @@ body {
 .animate-up-down {
   animation: move-up-down 3s ease-in-out infinite;
 }
+
+.test {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
