@@ -14,16 +14,16 @@ import { SiNestjs } from "react-icons/si";
 import { TbBrandMongodb } from "react-icons/tb";
 
 const amounts = [
-  <FaHtml5 className="text-9xl text-orange-500  bg-slate-800  test rounded-full p-5" />,
-  <FaCss3Alt className="text-9xl text-blue-700  bg-slate-800  test  rounded-full p-5" />,
-  <FaDocker className="text-9xl  text-blue-500  bg-slate-800  test  rounded-full p-4" />,
-  <AiOutlineJavaScript className="text-9xl text-yellow-500  bg-slate-800  test rounded-full p-5" />,
-  <FaNodeJs className="text-9xl text-green-700  bg-slate-800  test  rounded-full p-5" />,
-  <SiNestjs className="text-9xl text-pink-700  bg-slate-800  test  rounded-full p-5" />,
-  <DiMysql className="text-9xl text-blue-800  bg-slate-800  test  rounded-full p-4" />,
-  <TbBrandMongodb className="text-9xl text-green-800  bg-slate-800  test  rounded-full p-4" />,
-  <BiLogoPostgresql className="text-9xl text-blue-500  bg-slate-800  test  rounded-full p-4" />,
-  <FaGitAlt className="text-9xl text-orange-600  bg-slate-800  test  rounded-full p-4" />,
+  <FaHtml5 className=" text-9xl text-orange-500  bg-slate-800  test rounded-full p-5" />,
+  <FaCss3Alt className=" text-9xl text-blue-700  bg-slate-800  test  rounded-full p-5" />,
+  <FaDocker className=" text-9xl  text-blue-500  bg-slate-800  test  rounded-full p-4" />,
+  <AiOutlineJavaScript className=" text-9xl text-yellow-500  bg-slate-800  test rounded-full p-5" />,
+  <FaNodeJs className=" text-9xl text-green-700  bg-slate-800  test  rounded-full p-5" />,
+  <SiNestjs className=" text-9xl text-pink-700  bg-slate-800  test  rounded-full p-5" />,
+  <DiMysql className=" text-9xl text-blue-800  bg-slate-800  test  rounded-full p-4" />,
+  <TbBrandMongodb className=" text-9xl text-green-800  bg-slate-800  test  rounded-full p-4" />,
+  <BiLogoPostgresql className=" text-9xl text-blue-500  bg-slate-800  test  rounded-full p-4" />,
+  <FaGitAlt className=" text-9xl text-orange-600  bg-slate-800  test  rounded-full p-4" />,
   <div className="w-32 h-32 flex justify-center items-center bg-slate-800 test rounded-full">
     <div className=" bg-blue-500 relative w-16 h-16 rounded">
       <div className="text-white absolute bottom-0 right-0 font-bold text-3xl p-1">
@@ -31,8 +31,8 @@ const amounts = [
       </div>
     </div>
   </div>,
-  <FaReact className=" text-9xl text-blue-300  bg-slate-800  test  rounded-full p-5" />,
-  <BiLogoRedux className="text-9xl text-purple-500  bg-slate-800 test  rounded-full p-5" />,
+  <FaReact className="  text-9xl text-blue-300  bg-slate-800  test  rounded-full p-5" />,
+  <BiLogoRedux className=" text-9xl text-purple-500  bg-slate-800 test  rounded-full p-5" />,
 ];
 
 const getRandomSize = () => {
@@ -56,7 +56,7 @@ const getRandomAngle = () => {
   return Math.random() * 360;
 };
 
-const generateDollarBill = () => {
+const generateRandomIcons = () => {
   return {
     amount: getRandomAmount(),
     size: getRandomSize(),
@@ -68,22 +68,22 @@ const generateDollarBill = () => {
 };
 
 const getInitialState = () => {
-  const list = new Array(6);
-  return list.fill(0).map(generateDollarBill);
+  const list = new Array(4);
+  return list.fill(0).map(generateRandomIcons);
 };
 
 const IconsShower = () => {
-  const [bills, setBills] = useState(getInitialState());
+  const [icons, setIcons] = useState(getInitialState());
   useEffect(() => {
     const tick = () => {
-      const list = bills.slice();
+      const list = icons.slice();
       list.forEach((item, index) => {
         item.top += item.speed;
         if (item.top > 100) {
-          list[index] = generateDollarBill();
+          list[index] = generateRandomIcons();
         }
       });
-      setBills(list);
+      setIcons(list);
     };
     const timer = setTimeout(tick, 15);
     return () => {
@@ -95,17 +95,17 @@ const IconsShower = () => {
 
   return (
     <div className="fixed inset-0 pointer-events-none">
-      {bills.map((bill, i) => (
+      {icons.map((icon, i) => (
         <div
           key={i}
           className="fixed"
           style={{
-            left: `${bill.left}%`,
-            top: `${bill.top}%`,
-            transform: `scale(${bill.size}) rotateZ(${bill.angle}deg)`,
+            left: `${icon.left}%`,
+            top: `${icon.top}%`,
+            transform: `scale(${icon.size}) rotateZ(${icon.angle}deg)`,
           }}
         >
-          {bill.amount}
+          {icon.amount}
         </div>
       ))}
     </div>
