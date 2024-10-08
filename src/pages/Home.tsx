@@ -73,10 +73,15 @@ const Home = () => {
                     user-friendly applications that prioritize performance and
                     responsiveness.
                   </h2>
-                  <button className="text-xl mx-auto md:mx-0 hover:text-orange-500 hover:bg-white transition-colors duration-500 flex my-8 align-middle px-6 py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
-                    <BiDownload className="text-2xl" />
-                    <p>Download CV</p>
-                  </button>
+                  <a
+                    target="__blank"
+                    href="https://drive.google.com/file/d/1ZC-ogk-afjbBIABmwc4hJ624XagCsuSC/view?usp=drive_link"
+                  >
+                    <button className="text-xl mx-auto md:mx-0 hover:text-orange-500 hover:bg-white transition-colors duration-500 flex my-8 align-middle px-6 py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
+                      <BiDownload className="text-2xl" />
+                      <p>Download CV</p>
+                    </button>
+                  </a>
                   <div className="flex items-center gap-3 my-10">
                     <div className="mx-auto lg:mx-0 flex items-center gap-3">
                       <h1 className="text-white font-bold text-xl">
