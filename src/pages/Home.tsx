@@ -7,7 +7,7 @@ import { BiDownload, BiLogoGoogle, BiLogoLinkedin } from "react-icons/bi";
 import { IoPersonSharp } from "react-icons/io5";
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import meImage from "../assets/meimage.png";
+import meImage from "../assets/test.png";
 import IconsShower from "../components/IconsShower";
 
 const Home = () => {
