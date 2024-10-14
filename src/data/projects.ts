@@ -3,12 +3,28 @@ import dbImage from "../assets/muidashboard.png"
 import bTracker from "../assets/btracker.png";
 import snakeImg from "../assets/snake.png";
 export const  myProjects = [
+          {
+        title:"Budget-Tracker",
+        des:"The Budget Tracker is a web app for managing finances, featuring user authentication, a transaction dashboard, and data visualization, powered by a Node.js backend.",
+        sourceLink:"https://github.com/sudohamza/Budget-Tracker-App",
+        liveLink:"",
+        img:bTracker,
+        preview:true,
+    },
     {
         title:"Tower of Hanoi",
         des:"Tower of Hanoi is a simple puzzle game based on the Tower of Hanoi problem using React Native's drag-and-drop events.",
         sourceLink:"https://github.com/sudohamza/tower-hanoi",
         liveLink:"https://sudohamza.github.io/tower-hanoi/",
         img:towerImage,
+        preview:false,
+    },
+          {
+        title:"Snake",
+        des:"This is a classic Snake game built using React, HTML, CSS, and JavaScript. Players control a snake that moves around the grid, eating food to grow longer while avoiding collisions with the walls. The game features smooth controls, real-time scoring,",
+        sourceLink:"https://github.com/sudohamza/snake",
+        liveLink:"https://sudohamza.github.io/snake/",
+        img:snakeImg,
         preview:false,
     },
         {
@@ -19,20 +35,5 @@ export const  myProjects = [
         img:dbImage,
         preview:false,
     },
-          {
-        title:"Budget-Tracker",
-        des:"The Budget Tracker is a web app for managing finances, featuring user authentication, a transaction dashboard, and data visualization, powered by a Node.js backend.",
-        sourceLink:"https://github.com/sudohamza/Budget-Tracker-App",
-        liveLink:"",
-        img:bTracker,
-        preview:true,
-    },
-        {
-        title:"Snake",
-        des:"This is a classic Snake game built using React, HTML, CSS, and JavaScript. Players control a snake that moves around the grid, eating food to grow longer while avoiding collisions with the walls. The game features smooth controls, real-time scoring,",
-        sourceLink:"https://github.com/sudohamza/snake",
-        liveLink:"https://sudohamza.github.io/snake/",
-        img:snakeImg,
-        preview:false,
-    },
+  
 ]

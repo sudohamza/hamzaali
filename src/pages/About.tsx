@@ -191,12 +191,12 @@ const About = () => {
                         </div>
                       </div>
                       <p className="text-white text-lg max-w-80 my-5 mr-2">
-                        I have been working as a freelance web developer for
-                        more than two years.
+                        I have been working as a freelance web developer since
+                        2023.
                       </p>
                       <div className="gap-3  font-bold text-orange-500 flex items-center">
                         <div className="bg-orange-500 p-1"></div>
-                        <h1 className="text-xl">2 Years +</h1>
+                        <h1 className="text-xl">1 Year +</h1>
                       </div>
                     </div>
                   </div>
@@ -315,7 +315,7 @@ const About = () => {
                       </p>
                       <div className="gap-3  font-bold text-orange-500 flex items-center">
                         <div className="bg-orange-500 p-1"></div>
-                        <h1 className="text-xl">Four Months</h1>
+                        <h1 className="text-xl">4 Months</h1>
                       </div>
                     </div>
                   </div>
@@ -458,14 +458,14 @@ const About = () => {
               </div>
               <div className="flex-col">
                 <h1 className="text-center my-4 text-2xl md:text-3xl font-extrabold text-orange-500">
-                  See My Project Euler Profile
+                  Project Euler
                 </h1>
                 <a
                   href="https://projecteuler.net/profile/hamza-ali-khan.png"
                   target="_blank"
                 >
                   <button className="my-4 mx-auto text-md md:text-xl hover:text-orange-500 hover:bg-white transition-colors duration-500 flex align-middle px-3 py-1 md:px-6 md:py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
-                    <p>Goto Profile</p>
+                    <p>View Badge</p>
                   </button>
                 </a>
               </div>
@@ -477,11 +477,11 @@ const About = () => {
               </div>
               <div className="flex-col">
                 <h1 className="text-center text-2xl md:text-3xl font-extrabold text-orange-500">
-                  See My Leet Code Profile
+                  LeetCode
                 </h1>
                 <a href="https://leetcode.com/u/askhamzaali/" target="__blank">
                   <button className="my-4 mx-auto text-md md:text-xl hover:text-orange-500 hover:bg-white transition-colors duration-500 flex align-middle px-4 py-1.5 md:px-6 md:py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
-                    <p>Goto Profile</p>
+                    <p>View Profile</p>
                   </button>
                 </a>
               </div>

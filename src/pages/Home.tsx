@@ -70,8 +70,8 @@ const Home = () => {
                   <h2 className="text-2xl max-w-2xl text-white font-bolder mt-4">
                     Hello! I’m a full-stack web developer with expertise in
                     front-end and back-end technologies. I build dynamic,
-                    user-friendly applications that prioritize performance and
-                    responsiveness.
+                    scalable & user-friendly applications that prioritize
+                    performance and responsiveness.
                   </h2>
                   <a
                     target="__blank"
