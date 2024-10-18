@@ -75,7 +75,7 @@ const Home = () => {
                   </h2>
                   <a
                     target="__blank"
-                    href="https://drive.google.com/file/d/1ZC-ogk-afjbBIABmwc4hJ624XagCsuSC/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1CC2BMQo54EFMtC3BeH8LV5UfxOFx3N0o/view?usp=sharing"
                   >
                     <button className="text-xl mx-auto md:mx-0 hover:text-orange-500 hover:bg-white transition-colors duration-500 flex my-8 align-middle px-6 py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
                       <BiDownload className="text-2xl" />
