@@ -39,7 +39,7 @@ const Home = () => {
                   <div className="text-xl font-medium bg-white mt-0.5 rounded-b-xl p-3">
                     <div className="mb-5 flex px-5 items-center gap-4 text-orange-500">
                       <FaPhoneAlt className="border text-5xl rounded-full p-2 border-orange-500" />
-                      <h1 className="text-gray-500">+923283380239</h1>
+                      <h1 className="text-gray-500">+923354295878</h1>
                     </div>
                     <div className="mb-5 flex font-medium px-5 items-center gap-4 text-orange-500">
                       <CiMail className="border text-5xl rounded-full p-2 border-orange-500" />
@@ -75,7 +75,7 @@ const Home = () => {
                   </h2>
                   <a
                     target="__blank"
-                    href="https://drive.google.com/file/d/1CC2BMQo54EFMtC3BeH8LV5UfxOFx3N0o/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1R48RF2s6MGj69S9Oic7YvQKjyL2lD6ib/view?usp=sharing"
                   >
                     <button className="text-xl mx-auto md:mx-0 hover:text-orange-500 hover:bg-white transition-colors duration-500 flex my-8 align-middle px-6 py-3 bg-orange-500 rounded-full text-white font-bold  gap-3 items-center">
                       <BiDownload className="text-2xl" />

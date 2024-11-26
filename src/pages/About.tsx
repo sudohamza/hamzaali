@@ -15,7 +15,7 @@ import { AiOutlineJavaScript } from "react-icons/ai";
 import { SiNestjs } from "react-icons/si";
 import { BiLogoPostgresql, BiLogoRedux } from "react-icons/bi";
 import { DiMysql } from "react-icons/di";
-import { TbBrandMongodb } from "react-icons/tb";
+import { TbBrandMongodb, TbBrandNextjs } from "react-icons/tb";
 import leetCode from "../assets/leetcode.png";
 
 const About = () => {
@@ -164,7 +164,7 @@ const About = () => {
                       </p>
                       <div className="gap-3  font-bold text-orange-500 flex items-center">
                         <div className="bg-orange-500 p-1"></div>
-                        <h1 className="text-xl">2020</h1>
+                        <h1 className="text-xl">Fall 2020</h1>
                       </div>
                     </div>
                   </div>
@@ -191,12 +191,11 @@ const About = () => {
                         </div>
                       </div>
                       <p className="text-white text-lg max-w-80 my-5 mr-2">
-                        I have been working as a freelance web developer since
-                        2023.
+                        Freelance Full Stack developer June 2024 onwards
                       </p>
                       <div className="gap-3  font-bold text-orange-500 flex items-center">
                         <div className="bg-orange-500 p-1"></div>
-                        <h1 className="text-xl">1 Year +</h1>
+                        <h1 className="text-xl">1 Year</h1>
                       </div>
                     </div>
                   </div>
@@ -226,7 +225,7 @@ const About = () => {
                         </div>
                       </div>
                       <p className="text-white text-lg max-w-96 my-5 mr-2">
-                        Self-taught in Computer Science,focusing on:
+                        Self-taught in Computer Science, focusing on:
                         <br />
                         <span className="flex items-center  text-4xl">
                           •
@@ -375,6 +374,12 @@ const About = () => {
               <FaReact className=" text-9xl text-blue-300  bg-slate-800  shadow-md  rounded-full p-4" />
               <h3 className="text-white mt-2 bg-slate-800 shadow-md rounded-full text-xl">
                 React JS
+              </h3>
+            </div>
+            <div className=" mx-4 flex-col align-middle text-center">
+              <TbBrandNextjs className=" text-9xl text-gray-900  bg-slate-800  shadow-md  rounded-full p-4" />
+              <h3 className="text-white mt-2 bg-slate-800 shadow-md rounded-full text-xl">
+                Next JS
               </h3>
             </div>
             <div className=" mx-4 flex-col align-middle text-center">
