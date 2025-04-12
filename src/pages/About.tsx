@@ -17,6 +17,7 @@ import { BiLogoPostgresql, BiLogoRedux } from "react-icons/bi";
 import { DiMysql } from "react-icons/di";
 import { TbBrandMongodb, TbBrandNextjs } from "react-icons/tb";
 import leetCode from "../assets/leetcode.png";
+import video from "../../public/temp_intro_video.mp4";
 
 const About = () => {
   return (
@@ -70,10 +71,14 @@ const About = () => {
             </div>
             {/* Image */}
             <div className="relative">
-              <img src="https://themihub.com/html/morex-bootstrap/morex/assets/img/other/about.png" />
+              {/* <img src="https://themihub.com/html/morex-bootstrap/morex/assets/img/other/about.png" /> */}
+              <video width="800" controls>
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
               <div
                 style={{ zIndex: -99 }}
-                className="animate-up-down absolute rounded-full p-20 border-8 border-orange-500 -ml-16 -mt-20"
+                className="animate-up-down absolute rounded-full p-12 border-8 border-orange-500 -ml-14 -mt-14"
               ></div>
             </div>
           </div>
