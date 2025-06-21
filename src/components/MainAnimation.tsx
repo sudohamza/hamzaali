@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { useState } from "react";
+import { motion } from "framer-motion";
 import { AiOutlineMenu, AiOutlineClose, AiFillHome } from "react-icons/ai";
 import { IoPersonSharp } from "react-icons/io5";
 import { FaFolderOpen } from "react-icons/fa";
 
 import { NavLink, useLocation } from "react-router-dom";
+import useMenuAnimation from "../hooks/menu-animation";
+import useMainAnimation from "../hooks/main-animation";
+import CustomButton from "./CustomButton";
 
 type MainAnimationProps = {
   children?: React.ReactNode;
@@ -14,31 +17,16 @@ type MainAnimationProps = {
 const SideMenu = () => {
   const [open, setOpen] = useState(false);
 
-  const mainDiv = useAnimation();
-  const innerDiv = useAnimation();
-
-  const sequence = async () => {
-    await mainDiv.start({
-      height: open ? "auto" : 0,
-      transition: { duration: 0.2 },
-    });
-
-    innerDiv.start({
-      width: open ? "auto" : 0,
-      transition: { duration: 1, delay: 1 },
-    });
-  };
-
-  useEffect(() => {
-    sequence();
-  }, [open]);
+  const { mainDiv } = useMenuAnimation(open);
 
   return (
-    <div className="hidden lg:block fixed top-8 left-8  shadow-lg rounded-full bg-white">
+    <div className="hidden lg:block fixed top-8 left-8 shadow-[-2px_0px_32px_8px_rgba(0,_0,_0,_0.2)] rounded-full bg-white">
       <button
         onClick={() => setOpen((prev) => !prev)}
         className={`p-2 transition-all ease-in ${
-          open ? "bg-white text-orange-600" : "bg-orange-600 text-white"
+          open
+            ? "bg-white text-[var(--color-brand)}"
+            : "bg-[var(--color-brand)] text-white"
         } rounded-full text-2xl font-bold`}
       >
         {open ? <AiOutlineClose /> : <AiOutlineMenu />}
@@ -66,21 +54,21 @@ const SideMenu = () => {
               }}
               to="/"
               className={({ isActive }) =>
-                isActive ? "border-r-4 border-orange-500 " : ""
+                isActive ? "border-r-4 border-[var(--color-brand)] " : ""
               }
             >
-              <button className="ml-2 text-orange-500">
+              <button className="ml-2 text-[var(--color-brand)]">
                 <AiFillHome className="text-2xl mr-1 transition-colors duration-1000 ease-in-out" />
               </button>
             </NavLink>
             <NavLink
               onClick={() => setOpen((prev) => !prev)}
               className={({ isActive }) =>
-                isActive ? "text-orange-500" : "text-white"
+                isActive ? "text-[var(--color-brand)]" : "dark:text-white"
               }
               to="/"
             >
-              <h2 className=" transition-colors hover:text-orange-500 font-extrabold text-1xl duration-1000 ease-in-out">
+              <h2 className=" transition-colors hover:text-[var(--color-brand)] font-extrabold text-1xl duration-1000 ease-in-out">
                 HOME
               </h2>
             </NavLink>
@@ -91,7 +79,9 @@ const SideMenu = () => {
               onClick={() => setOpen((prev) => !prev)}
               to="/about"
               className={({ isActive }) =>
-                isActive ? "border-r-4 border-orange-500 " : ""
+                isActive
+                  ? "border-r-4 border-[var(--color-brand)] "
+                  : "dark:text-white"
               }
               style={{
                 display: "flex",
@@ -99,18 +89,18 @@ const SideMenu = () => {
                 justifyContent: "center",
               }}
             >
-              <button className="ml-2 text-orange-500">
+              <button className="ml-2 text-[var(--color-brand)]">
                 <IoPersonSharp className="text-2xl mr-1 transition-colors duration-1000 ease-in-out" />
               </button>
             </NavLink>
             <NavLink
               onClick={() => setOpen((prev) => !prev)}
               className={({ isActive }) =>
-                isActive ? "text-orange-500" : "text-white"
+                isActive ? "text-[var(--color-brand)]" : "dark:text-white"
               }
               to="/about"
             >
-              <h2 className="transition-colors hover:text-orange-500 font-extrabold text-1xl duration-1000 ease-in-out">
+              <h2 className="transition-colors hover:text-[var(--color-brand)] font-extrabold text-1xl duration-1000 ease-in-out">
                 ABOUT
               </h2>
             </NavLink>
@@ -121,7 +111,9 @@ const SideMenu = () => {
               onClick={() => setOpen((prev) => !prev)}
               to="/portfolio"
               className={({ isActive }) =>
-                isActive ? "border-r-4 border-orange-500 " : ""
+                isActive
+                  ? "border-r-4 border-[var(--color-brand)] "
+                  : "dark:text-white"
               }
               style={{
                 display: "flex",
@@ -129,18 +121,18 @@ const SideMenu = () => {
                 justifyContent: "center",
               }}
             >
-              <button className="ml-2 text-orange-500">
+              <button className="ml-2 text-[var(--color-brand)]">
                 <FaFolderOpen className="text-2xl mr-1 transition-colors duration-1000 ease-in-out" />
               </button>
             </NavLink>
             <NavLink
               onClick={() => setOpen((prev) => !prev)}
               className={({ isActive }) =>
-                isActive ? "text-orange-500" : "text-white"
+                isActive ? "text-[var(--color-brand)]" : "dark:text-white"
               }
               to="/portfolio"
             >
-              <h2 className="transition-colors hover:text-orange-500 font-extrabold text-1xl duration-1000 ease-in-out">
+              <h2 className="transition-colors hover:text-[var(--color-brand)] font-extrabold text-1xl duration-1000 ease-in-out">
                 PORTFOLIO
               </h2>
             </NavLink>
@@ -152,56 +144,40 @@ const SideMenu = () => {
 };
 
 const SmallMenu = () => {
+  const { pathname } = useLocation();
+
+  function isActive(required: string): string {
+    const result = pathname === required;
+    return result ? "border rounded-full border-orange-700 border-2 p-1" : "";
+  }
+
   return (
     <div
-      style={{ backgroundColor: "#181a1d", zIndex: 9999 }}
-      className="lg:hidden fixed justify-around items-center flex bottom-0 left-0 right-0 h-16"
+      style={{ zIndex: 9999 }}
+      className="bg-white dark:bg-[#191a1e] lg:hidden fixed justify-around items-center flex bottom-0 left-0 right-0 h-16 shadow-[0px_-5px_12px_0px_rgba(0,_0,_0,_0.1)]"
     >
-      <NavLink to="/">
-        <AiFillHome className="hover:bg-black transition-colors text-5xl bg-orange-500  text-white  rounded-full p-3" />
+      <NavLink to="/" className={isActive("/")}>
+        <CustomButton className="p-3">
+          <AiFillHome className="text-xl" />
+        </CustomButton>
       </NavLink>
-      <NavLink to="/about">
-        <IoPersonSharp className="hover:bg-black transition-colors text-5xl bg-orange-500  text-white  rounded-full p-3" />
+      <NavLink to="/about" className={isActive("/about")}>
+        <CustomButton className="p-3">
+          <IoPersonSharp className="text-xl" />
+        </CustomButton>
       </NavLink>
-      <NavLink to="/portfolio">
-        <FaFolderOpen className="hover:bg-black transition-colors text-5xl bg-orange-500  text-white  rounded-full p-3" />
+      <NavLink to="/portfolio" className={isActive("/portfolio")}>
+        <CustomButton className="p-3">
+          <FaFolderOpen className="text-xl" />
+        </CustomButton>
       </NavLink>
     </div>
   );
 };
 
 const MainAnimation: React.FC<MainAnimationProps> = ({ children, menu }) => {
-  const firstDivControls = useAnimation();
-  const secondDivControls = useAnimation();
-  const thirdDivControls = useAnimation();
-  const { pathname } = useLocation();
-
-  const reset = () => {
-    firstDivControls.set({ height: 0, opacity: 1 });
-    secondDivControls.set({ marginLeft: 0 });
-    thirdDivControls.set({ marginRight: 0 });
-  };
-
-  const sequence = async () => {
-    reset();
-    await firstDivControls.start({
-      opacity: 0,
-      height: "100%",
-      transition: { duration: 1 },
-    });
-
-    secondDivControls.start({
-      marginLeft: `-100%`,
-      transition: { duration: 1 },
-    });
-    thirdDivControls.start({
-      marginRight: "-100%",
-      transition: { duration: 1 },
-    });
-  };
-  useEffect(() => {
-    sequence();
-  }, [firstDivControls, secondDivControls, pathname]);
+  const { firstDivControls, secondDivControls, thirdDivControls } =
+    useMainAnimation();
 
   return (
     <>

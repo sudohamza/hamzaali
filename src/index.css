@@ -2,6 +2,12 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@layer base{
+  :root {
+    --color-brand:#ed5a3a;
+  }
+}
+
 .fade-enter {
   opacity: 0;
 }
@@ -19,15 +25,10 @@
   opacity: 0;
   transition: opacity 500ms;
 }
-body {
-  background-color: #212428;
-}
 
-.bgOne {
-  width: 100%;
-  background-image: url("./assets/bgone.png");
-  background-size: cover;
-  background-position: center;
+
+.light-bg {
+  background-image: url("./assets/light-bg.png");
 }
 
 .page__heading {
@@ -39,7 +40,6 @@ body {
   font-size: 3.8rem;
   line-height: 4rem;
   color: white;
-  font-weight: 600;
   text-shadow: 3px 3px 0 #ee5f38, -1px -1px 0 #ee5f38, 1px -1px 0 #ee5f38,
     -1px 1px 0 #ee5f38, 1px 1px 0 #ee5f38;
   opacity: 0.2;
@@ -54,7 +54,6 @@ body {
   line-height: 2.5rem;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-weight: 600;
 }
 
 @keyframes move-up-down {

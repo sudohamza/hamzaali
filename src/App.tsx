@@ -5,11 +5,19 @@ import About from "./pages/About";
 import PortFolio from "./pages/PortFolio";
 import { HashRouter } from "react-router-dom";
 import ScrollToTop from "./components/ScroolToTop";
+import { useEffect } from "react";
+import LightDarkSwitch from "./components/LightDarkSwitch";
 
 const App = () => {
+  useEffect(() => {
+    document.body.classList.add("bg-[#ffffff]");
+    document.body.classList.add("dark:bg-[#212429]");
+  }, []);
+
   return (
     <HashRouter>
       <ScrollToTop />
+      <LightDarkSwitch />
       <Routes>
         <Route
           path="/"
