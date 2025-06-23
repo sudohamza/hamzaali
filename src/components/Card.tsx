@@ -48,7 +48,7 @@ export const Card: React.FC<{
             className="w-full flex justify-center py-1 gap-2 text-xl font-bold my-4"
             onClick={openLinkNewTab(liveLink)}
           >
-            <GoEye className="text-4xl" /> Source Code
+            <GoEye className="text-4xl" /> Live Preview
           </CustomButton>
         )}
       </div>
