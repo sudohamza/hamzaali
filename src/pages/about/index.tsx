@@ -1,10 +1,11 @@
-import { GMAIL, LEET_CODE, personalInfo, PROJECT_EULER } from "../data/info";
-import leetCode from "../assets/leetcode.png";
-import video from "../../public/temp_intro_video.mp4";
-import CustomButton from "../components/CustomButton";
-import ResumeTimeline from "../components/ResumeTimeline";
-import { openLinkNewTab } from "../utils";
-import { skills } from "../data/skills";
+import { GMAIL, LEET_CODE, PROJECT_EULER } from "../../data/info";
+import leetCode from "../../assets/leetcode.png";
+import video from "../../../public/temp_intro_video.mp4";
+import CustomButton from "../../components/CustomButton";
+import ResumeTimeline from "./ResumeTimeline";
+import { openLinkNewTab } from "../../utils";
+import PersonalInfo from "./PersonalInfo";
+import WebSkills from "./WebSkills";
 
 const openMail = openLinkNewTab(GMAIL);
 const openProjectEulerProfile = openLinkNewTab(PROJECT_EULER);
@@ -13,7 +14,7 @@ const openLeetCodeProfile = openLinkNewTab(LEET_CODE);
 const About = () => {
   return (
     <div className="pt-20">
-      {/* Heading */}
+      {/* Hero Heading */}
       <div className="flex items-center justify-center py-10">
         <div className="page__heading">
           <h1 className=" page__heading--title font-extrabold">ABOUT ME</h1>
@@ -38,20 +39,7 @@ const About = () => {
                 PERSONAL INFOS:
               </h1>
               <div className="grid grid-cols-2">
-                {personalInfo.map((item, index) => {
-                  return (
-                    <div key={index}>
-                      <div className="col-span-1 my-3 gap-5 flex items-center">
-                        <div className="p-1 rounded-full border-[var(--color-brand)] border-2">
-                          <div className="bg-[var(--color-brand)] p-1 rounded-full"></div>
-                        </div>
-                        <h1 className="text-gray-500 sm:text-sm xl:text-xl font-medium dark:text-white">
-                          {item}
-                        </h1>
-                      </div>
-                    </div>
-                  );
-                })}
+                <PersonalInfo />
               </div>
               <CustomButton
                 onClick={openMail}
@@ -62,7 +50,6 @@ const About = () => {
             </div>
             {/* Image */}
             <div className="relative">
-              {/* <img src="https://themihub.com/html/morex-bootstrap/morex/assets/img/other/about.png" /> */}
               <video width="800" controls>
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
@@ -116,24 +103,7 @@ const About = () => {
             </div>
           </div>
           {/* Logos */}
-          <div className="mx-4 flex flex-wrap gap-5 justify-center">
-            {skills.map(({ icon, label, isCustom }, idx) => (
-              <div key={idx} className="flex flex-col items-center text-center">
-                {/* Icon */}
-                {!isCustom ? (
-                  <div className="text-7xl bg-orange-50 dark:bg-slate-800 shadow-md rounded-full p-7">
-                    {icon}
-                  </div>
-                ) : (
-                  icon
-                )}
-                {/* Label */}
-                <h3 className="min-w-36 mt-2 text-lg text-[var(--color-brand)] dark:text-white bg-orange-50 dark:bg-slate-800 dark:bg-slate-800 shadow-md rounded-full px-4 py-1">
-                  {label}
-                </h3>
-              </div>
-            ))}
-          </div>
+          <WebSkills />
         </div>
       </div>
       {/* Fourth Section */}
@@ -188,9 +158,7 @@ const About = () => {
             {/* Leet Code */}
             <div className="mt-5 flex p-6 bg-orange-50 dark:bg-[#1e293b] rounded-lg shadow-md w-full max-w-4xl">
               <div>
-                <div>
-                  <img className="mx-auto" src={leetCode} width={140} />
-                </div>
+                <img className="mx-auto" src={leetCode} width={140} />
               </div>
               <div className="ml-5 flex-1">
                 <h2 className="text-2xl font-semibold text-[var(--color-brand)]">

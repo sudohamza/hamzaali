@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router";
 import MainAnimation from "./components/MainAnimation";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import About from "./pages/about";
 import PortFolio from "./pages/PortFolio";
 import { HashRouter } from "react-router-dom";
 import ScrollToTop from "./components/ScroolToTop";

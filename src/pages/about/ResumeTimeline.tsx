@@ -47,6 +47,16 @@ const TimelineItem = ({
 );
 
 const ResumeTimeline = () => {
+  function getFreelancingYears(): number {
+    const startDate = new Date("2024-06-01");
+    const currentDate = new Date();
+
+    const diffInMs = currentDate.getTime() - startDate.getTime();
+    const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365.25);
+
+    return Math.floor(diffInYears);
+  }
+
   return (
     <div className="pl-2 mt-16 block lg:flex">
       {/* Column One */}
@@ -88,7 +98,9 @@ const ResumeTimeline = () => {
           title="WEB DEVELOPER"
           subtitle="Freelance"
           description={<>Freelance Full Stack developer June 2024 onwards</>}
-          year="1 Year"
+          year={`${getFreelancingYears()} ${
+            getFreelancingYears() > 1 ? "Yeas" : "Year"
+          }`}
         />
       </div>
 

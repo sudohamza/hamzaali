@@ -10,7 +10,7 @@ const PortFolio = () => {
           <h1 className=" page__heading--title font-extrabold text-white">
             MY PORTFOLIO
           </h1>
-          <h2 className="page__heading--subtitle text-[#322f2a] font-extrabold">
+          <h2 className="page__heading--subtitle text-[#322f2a] font-extrabold dark:text-white">
             MY <span className="text-[var(--color-brand)]">PORTFOLIO</span>
           </h2>
         </div>
